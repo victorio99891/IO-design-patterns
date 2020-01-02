@@ -1,17 +1,17 @@
 package pl.ioii.designpatterns;
 
-import pl.ioii.designpatterns.builder.model.Employee;
-import pl.ioii.designpatterns.factory.PolygonFactory;
+import pl.ioii.designpatterns.builder.EmployeeTest;
+import pl.ioii.designpatterns.factory.PolygonFactoryTest;
 
 public class Runner {
 
     public static void main(String[] args) {
 
-        Employee.test();
+        System.out.println("\n============ BUILDER TEST ============\n");
+        EmployeeTest.test();
 
-        System.out.println("\n\n");
-
-        PolygonFactory.test();
+        System.out.println("\n============ FACTORY TEST ============\n");
+        PolygonFactoryTest.test();
 
     }
 }
