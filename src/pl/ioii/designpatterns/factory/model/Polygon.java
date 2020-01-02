@@ -1,12 +1,12 @@
 package pl.ioii.designpatterns.factory.model;
 
-public abstract class Polygon {
+public interface Polygon {
 
-    public abstract String getName();
+    String getName();
 
-    public abstract int getNumberOfAngles();
+    int getNumberOfAngles();
 
-    public void printDetails() {
+    default void printDetails() {
         System.out.println("Created polygon with name: " + this.getName() + " and " + this.getNumberOfAngles() + " angles.");
     }
 }

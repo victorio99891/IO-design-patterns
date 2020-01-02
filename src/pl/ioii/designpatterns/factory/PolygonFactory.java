@@ -8,7 +8,7 @@ import pl.ioii.designpatterns.factory.model.Triangle;
 
 public abstract class PolygonFactory {
 
-    public static Polygon getExistingPolygon(int angles) {
+    public static Polygon create(int angles) {
         if (angles == 3) {
             return new Triangle();
         }

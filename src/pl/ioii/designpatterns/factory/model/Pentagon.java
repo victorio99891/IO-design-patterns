@@ -1,6 +1,6 @@
 package pl.ioii.designpatterns.factory.model;
 
-public class Pentagon extends Polygon {
+public class Pentagon implements Polygon {
 
     @Override
     public String getName() {

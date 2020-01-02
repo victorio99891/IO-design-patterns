@@ -1,6 +1,6 @@
 package pl.ioii.designpatterns.factory.model;
 
-public class Square extends Polygon {
+public class Square implements Polygon {
 
     @Override
     public String getName() {

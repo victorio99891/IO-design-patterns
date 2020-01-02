@@ -2,6 +2,7 @@ package pl.ioii.designpatterns;
 
 import pl.ioii.designpatterns.builder.EmployeeTest;
 import pl.ioii.designpatterns.factory.PolygonFactoryTest;
+import pl.ioii.designpatterns.singleton.ConfigurationSingletonTest;
 
 public class Runner {
 
@@ -13,5 +14,7 @@ public class Runner {
         System.out.println("\n============ FACTORY TEST ============\n");
         PolygonFactoryTest.test();
 
+        System.out.println("\n============ SINGLETON TEST ============\n");
+        ConfigurationSingletonTest.test();
     }
 }
