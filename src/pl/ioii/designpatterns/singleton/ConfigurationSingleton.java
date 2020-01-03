@@ -10,7 +10,7 @@ public class ConfigurationSingleton {
     // LAZY LOADING OF APPLICATION PROPERTIES FROM CONFIGURATION FILE
     public static ConfigurationSingleton getInstance(String authUrl, String usersUrl) {
         if (instance == null) {
-            return new ConfigurationSingleton(authUrl, usersUrl);
+            instance = new ConfigurationSingleton(authUrl, usersUrl);
         }
         return instance;
     }
