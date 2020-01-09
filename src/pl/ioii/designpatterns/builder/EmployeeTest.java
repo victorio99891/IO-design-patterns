@@ -13,6 +13,7 @@ public class EmployeeTest {
                 .build();
 
         System.out.println(employee);
+        System.out.println();
 
         System.out.println("Attempt to create an employee with  all fields:");
 
@@ -23,6 +24,8 @@ public class EmployeeTest {
                 .build();
 
         System.out.println(employee);
+        System.out.println();
+
 
         System.out.println("Attempt to create an employee with mandatory fields set to 'null' values.");
         try {
