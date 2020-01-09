@@ -7,6 +7,6 @@ public interface Polygon {
     int getNumberOfAngles();
 
     default void printDetails() {
-        System.out.println("Polygon with name: " + this.getName() + " and " + this.getNumberOfAngles() + " angles.");
+        System.out.println("This polygon has name " + this.getName() + " and " + this.getNumberOfAngles() + " angles.");
     }
 }
