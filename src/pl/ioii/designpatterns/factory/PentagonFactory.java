@@ -1,11 +1,10 @@
 package pl.ioii.designpatterns.factory;
 
 import pl.ioii.designpatterns.factory.model.Pentagon;
-import pl.ioii.designpatterns.factory.model.Polygon;
 
-public class PentagonFactory implements PolygonFactory {
+public class PentagonFactory implements AbstractFactory<Pentagon> {
     @Override
-    public Polygon create() {
+    public Pentagon create() {
         return new Pentagon();
     }
 }
