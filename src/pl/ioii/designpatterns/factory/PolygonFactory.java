@@ -3,7 +3,7 @@ package pl.ioii.designpatterns.factory;
 import pl.ioii.designpatterns.factory.exception.PolygonNotFound;
 import pl.ioii.designpatterns.factory.model.Pentagon;
 import pl.ioii.designpatterns.factory.model.Polygon;
-import pl.ioii.designpatterns.factory.model.Square;
+import pl.ioii.designpatterns.factory.model.Rectangle;
 import pl.ioii.designpatterns.factory.model.Triangle;
 
 public class PolygonFactory implements AbstractFactory<Polygon> {
@@ -15,7 +15,7 @@ public class PolygonFactory implements AbstractFactory<Polygon> {
         }
 
         if (angles == 4) {
-            return new Square();
+            return new Rectangle();
         }
 
         if (angles == 5) {
